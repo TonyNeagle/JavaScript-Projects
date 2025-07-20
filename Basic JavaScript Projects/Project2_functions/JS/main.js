@@ -9,3 +9,10 @@ function My_Second_Function() {                                         // Decla
     sentence += " a lot from this book!";                               // Declares a second variable for sentence and uses the += operator to concatenate a string to the existing value of sentence
     document.getElementById("Concatenate").innerHTML = sentence;        // Concatenates the string and assigns it to the HTML element with the id "Concatenate"
 }
+
+function Addition() {
+    var addition = 5 + 5;                                              // Declares a variable addition and assigns it the sum of 5 and 5
+    document.getElementById("Addition_1").innerHTML = "5 + 5 = " + addition; // Changes the text of the HTML element with the id "Addition_1" to display the result of the addition
+}
+
+
