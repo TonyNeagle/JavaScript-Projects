@@ -1,0 +1,100 @@
+* {box-sizing: border-box;}             /* Remove extra space below image */
+img {                                   /* Make the image responsive */
+    vertical-align: middle;             /* Center the image */
+    width: 100%;                        /* Scale the image to the width of the container */ 
+    height: auto;                       /* Scale the height according to the width, thus keeping the aspect ratio */  
+    object-fit: cover;                  /* Cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+    max-width: 1000px;                  /* Limit the maximum width of the image */
+    max-height: 500px;                  /* Limit the maximum height of the image */
+}
+.dot {                                  /* Style the dots/bullets/indicators */     
+    text-align: center;                 /* Center the dots/bullets/indicators */
+    background: #ddd;                 /* Light grey background */
+}
+
+/* Slideshow container */
+.slideshow-container {                  
+    max-width: 1000px;                  /* Limit the maximum width of the slideshow container */
+    position: relative;                 /* Position relative to allow absolute positioning of child elements */
+    margin: auto;                       /* Center the slideshow container */
+}
+
+/* Hide the images by default */
+.mySlides {                             
+    display: none;                      /* Hide the slides by default */
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;                    /* Change the cursor to a pointer when hovering over the buttons */    
+    position: absolute;                 /* Position the buttons absolutely within the slideshow container */ 
+    top: 50%;                           /* Position the buttons vertically centered */
+    width: auto;                        /* Width is determined by the content */
+    margin-top: -22px;                  /* Center the buttons vertically by adjusting the top margin */
+    padding: 16px;                      /* Add padding around the buttons */   
+    color: white;                     /* White text color */
+    font-weight: bold;                  /* Bold font weight */   
+    font-size: 18px;                    /* Font size of the buttons */
+    transition: 0.6s ease;              /* Smooth transition for hover effects */
+    border-radius: 0 3px 3px 0;         /* Rounded corners for the buttons */    
+    -webkit-user-select: none;          /* Prevent text selection on buttons (for Safari) */      
+    user-select: none;                  /* Prevent text selection on buttons */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;                           /* Position the next button to the right edge */    
+    border-radius: 3px 0 0 3px;         /* Rounded corners for the next button */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {                                                
+    background-color: rgba(0,0,0,0.8);  /* Dark background with some transparency on hover */
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;                      /* Light grey text color */
+    font-size: 25px;                       /* Font size of the caption text */  
+    padding: 8px 12px;                     /* Padding around the caption text */
+    position: absolute;                    /* Position the caption text absolutely within the slideshow container */
+    bottom: 8px;                           /* Position the caption text 8px from the bottom */
+    width: 100%;                           /* Make the caption text span the full width of the container */
+    text-align: center;                    /* Center the caption text */
+  }
+  
+  /* Number text (1/4 etc) */
+  .numbertext {
+    color: #f1f5f4;
+    font-size: 22px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
