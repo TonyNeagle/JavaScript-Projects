@@ -15,3 +15,5 @@ Calculator
 <br>
 A basic calculator where users can Add, Subtract, Multiply or divide numbers.
 
+There are also various projects that utilise various functions.
+
